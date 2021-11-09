@@ -10,16 +10,23 @@ using System.Windows.Forms;
 
 namespace Part_10._5___Student_Class
 {
-    public partial class frmStudentForms : Form
+     partial class frmStudentForms : Form
     {
         public static List<Student> students = new List<Student>();
+
 
         public frmStudentForms()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+
+        private void lstStudents_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmStudentForms_Load(object sender, EventArgs e)
         {
             students.Add(new Student("Mitchel", "Gough"));
             students.Add(new Student("Seth", "Fisher"));
@@ -31,13 +38,24 @@ namespace Part_10._5___Student_Class
             lstStudents.DataSource = students;
         }
 
-        private void lstStudents_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnRemoveStudent_Click(object sender, EventArgs e)
         {
+            if (lstStudents.SelectedIndex >= 0)
+            {
+                students.RemoveAt(lstStudents.SelectedIndex);
+                lstStudents.DataSource = null;
+                lstStudents.DataSource = students;
+            }
+            else
+            {
 
+            }
         }
 
-        private void frmStudentForms_Load(object sender, EventArgs e)
+        private void btnAddStudent_Click(object sender, EventArgs e)
         {
+            frmAddStudent frmAddStudent = new frmAddStudent();
+            frmAddStudent.ShowDialog();
 
         }
     }

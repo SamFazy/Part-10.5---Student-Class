@@ -44,6 +44,7 @@ namespace Part_10._5___Student_Class
             this.btnDone.TabIndex = 0;
             this.btnDone.Text = "Done";
             this.btnDone.UseVisualStyleBackColor = true;
+            this.btnDone.Click += new System.EventHandler(this.btnDone_Click_1);
             // 
             // lstStudents
             // 

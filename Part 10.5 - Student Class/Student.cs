@@ -6,6 +6,7 @@ namespace Part_10._5___Student_Class
 {
     class Student
     {
+
         private static Random generator = new Random();
         private string _firstName;
         private string _lastName;

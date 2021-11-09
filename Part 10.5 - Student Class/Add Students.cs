@@ -29,6 +29,7 @@ namespace Part_10._5___Student_Class
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+     
             if (txtAddName.Text == "")
             {
 
@@ -36,7 +37,7 @@ namespace Part_10._5___Student_Class
 
             else
             {
-                frmStudentForms.students.Add(txtAddName.Text);
+                frmStudentForms.students.Add(new Student(txtAddName.Text, txtAddName.Text));
                 lstStudents.DataSource = null;
                 lstStudents.DataSource = frmStudentForms.students;
             }
@@ -51,7 +52,13 @@ namespace Part_10._5___Student_Class
 
         private void frmAddStudent_Load(object sender, EventArgs e)
         {
+            lstStudents.DataSource = frmStudentForms.students;
 
+        }
+
+        private void btnDone_Click_1(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }
