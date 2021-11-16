@@ -56,7 +56,17 @@ namespace Part_10._5___Student_Class
         {
             frmAddStudent frmAddStudent = new frmAddStudent();
             frmAddStudent.ShowDialog();
+            lstStudents.DataSource = null;
+            lstStudents.DataSource = frmStudentForms.students;
 
+        }
+
+        private void btnStudentDetails_Click(object sender, EventArgs e)
+        {
+            frmStudentDetails frmStudentDetails = new frmStudentDetails(lstStudents.SelectedIndex);
+            frmStudentDetails.ShowDialog();
+            lstStudents.DataSource = null;
+            lstStudents.DataSource = frmStudentForms.students;
         }
     }
 }

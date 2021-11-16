@@ -27,23 +27,6 @@ namespace Part_10._5___Student_Class
             lstStudents.DataSource = frmStudentForms.students;
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-     
-            if (txtAddName.Text == "")
-            {
-
-            }
-
-            else
-            {
-                frmStudentForms.students.Add(new Student(txtAddName.Text, txtAddName.Text));
-                lstStudents.DataSource = null;
-                lstStudents.DataSource = frmStudentForms.students;
-            }
-
-            txtAddName.Text = "";
-        }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -59,6 +42,29 @@ namespace Part_10._5___Student_Class
         private void btnDone_Click_1(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void txtAddName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click_1(object sender, EventArgs e)
+        {
+            if (txtFirstName.Text == "" || txtLastName.Text == "")
+            {
+
+            }
+
+            else
+            {
+                frmStudentForms.students.Add(new Student(txtFirstName.Text, txtLastName.Text));
+                lstStudents.DataSource = null;
+                lstStudents.DataSource = frmStudentForms.students;
+            }
+
+            txtFirstName.Text = "";
+            txtLastName.Text = "";
         }
     }
 }
