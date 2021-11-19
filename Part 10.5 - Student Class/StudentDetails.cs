@@ -14,7 +14,7 @@ namespace Part_10._5___Student_Class
     {
         int index;
 
-        public frmStudentDetails()
+        public frmStudentDetails(int index)
         {
             InitializeComponent();
             this.index = index;
@@ -24,6 +24,7 @@ namespace Part_10._5___Student_Class
         private void StudentDetails_Load(object sender, EventArgs e)
         {
             lblName.Text = "Name: " + frmStudentForms.students[index];
+            lblStudentNumber.Text = "Student Number: " + Student.StudentNumber[index];
         }
 
         private void btnDone_Click(object sender, EventArgs e)

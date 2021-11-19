@@ -85,7 +85,7 @@
             this.Controls.Add(this.lblStudentNumber);
             this.Controls.Add(this.lblName);
             this.Name = "frmStudentDetails";
-            this.Text = "StudentDetails";
+            this.Text = "Student Details";
             this.Load += new System.EventHandler(this.StudentDetails_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
