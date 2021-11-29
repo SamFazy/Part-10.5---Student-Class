@@ -24,7 +24,8 @@ namespace Part_10._5___Student_Class
         private void StudentDetails_Load(object sender, EventArgs e)
         {
             lblName.Text = "Name: " + frmStudentForms.students[index];
-            lblStudentNumber.Text = "Student Number: " + Student.StudentNumber[index];
+            lblStudentNumber.Text = "Student Number: " + frmStudentForms.students[index].StudentNumber;
+            lblEmail.Text = "Email: " + frmStudentForms.students[index].Email;
         }
 
         private void btnDone_Click(object sender, EventArgs e)
