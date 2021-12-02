@@ -34,24 +34,27 @@ namespace Part_10._5___Student_Class
             this.btnAddStudent = new System.Windows.Forms.Button();
             this.btnStudentDetails = new System.Windows.Forms.Button();
             this.btnEditStudent = new System.Windows.Forms.Button();
+            this.btnDone = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstStudents
             // 
+            this.lstStudents.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstStudents.FormattingEnabled = true;
-            this.lstStudents.ItemHeight = 16;
-            this.lstStudents.Location = new System.Drawing.Point(13, 12);
+            this.lstStudents.ItemHeight = 27;
+            this.lstStudents.Location = new System.Drawing.Point(13, 17);
             this.lstStudents.Margin = new System.Windows.Forms.Padding(4);
             this.lstStudents.Name = "lstStudents";
-            this.lstStudents.Size = new System.Drawing.Size(216, 228);
+            this.lstStudents.Size = new System.Drawing.Size(216, 274);
             this.lstStudents.TabIndex = 0;
             // 
             // btnRemoveStudent
             // 
-            this.btnRemoveStudent.Location = new System.Drawing.Point(239, 59);
+            this.btnRemoveStudent.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveStudent.Location = new System.Drawing.Point(248, 75);
             this.btnRemoveStudent.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveStudent.Name = "btnRemoveStudent";
-            this.btnRemoveStudent.Size = new System.Drawing.Size(149, 37);
+            this.btnRemoveStudent.Size = new System.Drawing.Size(193, 50);
             this.btnRemoveStudent.TabIndex = 1;
             this.btnRemoveStudent.Text = "Remove Student";
             this.btnRemoveStudent.UseVisualStyleBackColor = true;
@@ -59,10 +62,11 @@ namespace Part_10._5___Student_Class
             // 
             // btnAddStudent
             // 
-            this.btnAddStudent.Location = new System.Drawing.Point(239, 15);
+            this.btnAddStudent.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStudent.Location = new System.Drawing.Point(248, 17);
             this.btnAddStudent.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddStudent.Name = "btnAddStudent";
-            this.btnAddStudent.Size = new System.Drawing.Size(149, 37);
+            this.btnAddStudent.Size = new System.Drawing.Size(193, 50);
             this.btnAddStudent.TabIndex = 2;
             this.btnAddStudent.Text = "Add Student";
             this.btnAddStudent.UseVisualStyleBackColor = true;
@@ -70,10 +74,11 @@ namespace Part_10._5___Student_Class
             // 
             // btnStudentDetails
             // 
-            this.btnStudentDetails.Location = new System.Drawing.Point(239, 104);
+            this.btnStudentDetails.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudentDetails.Location = new System.Drawing.Point(248, 133);
             this.btnStudentDetails.Margin = new System.Windows.Forms.Padding(4);
             this.btnStudentDetails.Name = "btnStudentDetails";
-            this.btnStudentDetails.Size = new System.Drawing.Size(149, 37);
+            this.btnStudentDetails.Size = new System.Drawing.Size(193, 50);
             this.btnStudentDetails.TabIndex = 3;
             this.btnStudentDetails.Text = "Student Details";
             this.btnStudentDetails.UseVisualStyleBackColor = true;
@@ -81,20 +86,34 @@ namespace Part_10._5___Student_Class
             // 
             // btnEditStudent
             // 
-            this.btnEditStudent.Location = new System.Drawing.Point(237, 149);
+            this.btnEditStudent.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditStudent.Location = new System.Drawing.Point(248, 191);
             this.btnEditStudent.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditStudent.Name = "btnEditStudent";
-            this.btnEditStudent.Size = new System.Drawing.Size(149, 37);
+            this.btnEditStudent.Size = new System.Drawing.Size(193, 50);
             this.btnEditStudent.TabIndex = 4;
             this.btnEditStudent.Text = "Edit Student";
             this.btnEditStudent.UseVisualStyleBackColor = true;
             this.btnEditStudent.Click += new System.EventHandler(this.btnEditStudent_Click);
             // 
+            // btnDone
+            // 
+            this.btnDone.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDone.Location = new System.Drawing.Point(248, 249);
+            this.btnDone.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDone.Name = "btnDone";
+            this.btnDone.Size = new System.Drawing.Size(193, 50);
+            this.btnDone.TabIndex = 5;
+            this.btnDone.Text = "Done";
+            this.btnDone.UseVisualStyleBackColor = true;
+            this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
+            // 
             // frmStudentForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 260);
+            this.ClientSize = new System.Drawing.Size(471, 317);
+            this.Controls.Add(this.btnDone);
             this.Controls.Add(this.btnEditStudent);
             this.Controls.Add(this.btnStudentDetails);
             this.Controls.Add(this.btnAddStudent);
@@ -115,6 +134,7 @@ namespace Part_10._5___Student_Class
         private System.Windows.Forms.Button btnAddStudent;
         private System.Windows.Forms.Button btnStudentDetails;
         private System.Windows.Forms.Button btnEditStudent;
+        private System.Windows.Forms.Button btnDone;
     }
 }
 

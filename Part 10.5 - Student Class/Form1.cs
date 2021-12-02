@@ -63,18 +63,40 @@ namespace Part_10._5___Student_Class
 
         private void btnStudentDetails_Click(object sender, EventArgs e)
         {
-            frmStudentDetails frmStudentDetails = new frmStudentDetails(lstStudents.SelectedIndex);
-            frmStudentDetails.ShowDialog();
-            lstStudents.DataSource = null;
-            lstStudents.DataSource = frmStudentForms.students;
+            if (lstStudents.SelectedIndex >= 0)
+            {
+                frmStudentDetails frmStudentDetails = new frmStudentDetails(lstStudents.SelectedIndex);
+                frmStudentDetails.ShowDialog();
+                lstStudents.DataSource = null;
+                lstStudents.DataSource = frmStudentForms.students;
+            }
+            else
+            {
+
+            }
+
         }
 
         private void btnEditStudent_Click(object sender, EventArgs e)
         {
-            frmEditStudents frmEditStudents = new frmEditStudents(lstStudents.SelectedIndex);
-            frmEditStudents.ShowDialog();
-            lstStudents.DataSource = null;
-            lstStudents.DataSource = frmStudentForms.students;
+            if (lstStudents.SelectedIndex >= 0)
+            {
+                frmEditStudents frmEditStudents = new frmEditStudents(lstStudents.SelectedIndex);
+                frmEditStudents.ShowDialog();
+                lstStudents.DataSource = null;
+                lstStudents.DataSource = frmStudentForms.students;
+            }
+            else
+            {
+
+            }
+                
+
+        }
+
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

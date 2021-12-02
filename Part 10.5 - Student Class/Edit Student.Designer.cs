@@ -41,9 +41,10 @@
             // lblStudentName
             // 
             this.lblStudentName.AutoSize = true;
+            this.lblStudentName.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentName.Location = new System.Drawing.Point(12, 46);
             this.lblStudentName.Name = "lblStudentName";
-            this.lblStudentName.Size = new System.Drawing.Size(240, 17);
+            this.lblStudentName.Size = new System.Drawing.Size(321, 26);
             this.lblStudentName.TabIndex = 0;
             this.lblStudentName.Text = "The Students Name You Are Editing:";
             this.lblStudentName.Click += new System.EventHandler(this.lblStudentName_Click);
@@ -51,49 +52,55 @@
             // lblInstructions
             // 
             this.lblInstructions.AutoSize = true;
-            this.lblInstructions.Location = new System.Drawing.Point(12, 18);
+            this.lblInstructions.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstructions.Location = new System.Drawing.Point(12, 9);
             this.lblInstructions.Name = "lblInstructions";
-            this.lblInstructions.Size = new System.Drawing.Size(354, 17);
+            this.lblInstructions.Size = new System.Drawing.Size(474, 26);
             this.lblInstructions.TabIndex = 1;
             this.lblInstructions.Text = "Please Type In The Students New First And Last Name";
             // 
             // lblFirstName
             // 
             this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Location = new System.Drawing.Point(12, 77);
+            this.lblFirstName.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstName.Location = new System.Drawing.Point(14, 86);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(80, 17);
+            this.lblFirstName.Size = new System.Drawing.Size(110, 26);
             this.lblFirstName.TabIndex = 2;
             this.lblFirstName.Text = "First Name:";
             // 
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(11, 109);
+            this.lblLastName.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastName.Location = new System.Drawing.Point(12, 135);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(80, 17);
+            this.lblLastName.Size = new System.Drawing.Size(108, 26);
             this.lblLastName.TabIndex = 3;
             this.lblLastName.Text = "Last Name:";
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(99, 77);
+            this.txtFirstName.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.Location = new System.Drawing.Point(130, 84);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(100, 22);
+            this.txtFirstName.Size = new System.Drawing.Size(179, 32);
             this.txtFirstName.TabIndex = 4;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(99, 109);
+            this.txtLastName.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastName.Location = new System.Drawing.Point(130, 132);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(100, 22);
+            this.txtLastName.Size = new System.Drawing.Size(179, 32);
             this.txtLastName.TabIndex = 5;
             // 
             // btnDone
             // 
-            this.btnDone.Location = new System.Drawing.Point(284, 109);
+            this.btnDone.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDone.Location = new System.Drawing.Point(340, 132);
             this.btnDone.Name = "btnDone";
-            this.btnDone.Size = new System.Drawing.Size(101, 26);
+            this.btnDone.Size = new System.Drawing.Size(144, 32);
             this.btnDone.TabIndex = 6;
             this.btnDone.Text = "Done";
             this.btnDone.UseVisualStyleBackColor = true;
@@ -101,18 +108,20 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(284, 77);
+            this.btnEdit.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Location = new System.Drawing.Point(340, 84);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(101, 26);
+            this.btnEdit.Size = new System.Drawing.Size(144, 32);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Confirm Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // frmEditStudents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 146);
+            this.ClientSize = new System.Drawing.Size(514, 185);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnDone);
             this.Controls.Add(this.txtLastName);
