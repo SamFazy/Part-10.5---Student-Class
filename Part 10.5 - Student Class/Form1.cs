@@ -68,5 +68,13 @@ namespace Part_10._5___Student_Class
             lstStudents.DataSource = null;
             lstStudents.DataSource = frmStudentForms.students;
         }
+
+        private void btnEditStudent_Click(object sender, EventArgs e)
+        {
+            frmEditStudents frmEditStudents = new frmEditStudents(lstStudents.SelectedIndex);
+            frmEditStudents.ShowDialog();
+            lstStudents.DataSource = null;
+            lstStudents.DataSource = frmStudentForms.students;
+        }
     }
 }
